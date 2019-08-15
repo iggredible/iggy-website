@@ -1,0 +1,16 @@
+{
+  "name": "iggy-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "Igor L Irianto <igoririanto@rocketmail.com>",
+  "license": "mit",
+  "devDependencies": {
+    "vuepress": "1.0.3"
+  }
+}
