@@ -1,9 +1,4 @@
-const {
-  isDotFile,
-  isReadme,
-  stripExtension,
-  normalizeFileName
-} = require("./helpers/utils.js");
+const { isDotFile, isReadme, stripExtension } = require("./helpers/utils.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
 
@@ -22,8 +17,7 @@ const docFileList = getFiles(ENTRY_DIR);
 
 docFileList.forEach(file => {
   const extensionlessFileName = stripExtension(file);
-  const normalizedFileName = normalizeFileName(extensionlessFileName);
-  navArr = [...navArr, { text: normalizedFileName, link: file }];
+  navArr = [...navArr, { text: extensionlessFileName, link: file }];
 });
 
 const getDirectories = source =>
@@ -43,10 +37,9 @@ dirList.forEach(dir => {
     console.log(!isReadme(file));
     if (!isReadme(file)) {
       const extensionlessFileName = stripExtension(file);
-      const normalizedFileName = normalizeFileName(extensionlessFileName);
       dirArr = [
         ...dirArr,
-        { text: normalizedFileName, link: `/${dir}/${file}` }
+        { text: extensionlessFileName, link: `/${dir}/${file}` }
       ];
     }
   });
