@@ -14,7 +14,6 @@
     </div>
 </template>
 <script>
-// this component will display only blogs
 export default {
     computed: {
         posts() {
