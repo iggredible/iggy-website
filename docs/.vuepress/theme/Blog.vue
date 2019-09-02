@@ -1,23 +1,16 @@
 <template>
     <div>
-        <div class="backlink">
+        <div>
             <a href="/">← Home</a>
         </div>
-        <div class="content">
-            <h1>{{ $page.frontmatter.title }}</h1>
-            <h3>{{ $page.frontmatter.excerpt }}</h3>
-            <h3>{{ $page.frontmatter.nonexistent }}</h3>
+        <div class="content m-8">
+            <h1 class="text-center">{{ $page.frontmatter.title }}</h1>
+            <h6 class="text-center italic font-light m-4">{{ $page.frontmatter.excerpt }}</h6>
+            <h4>{{ $page.frontmatter.nonexistent }}</h4>
             <Content />
-              {{ hello }}
         </div>
     </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      hello: "hello vuepress"
-    }
-  }
-};
+export default {};
 </script>
