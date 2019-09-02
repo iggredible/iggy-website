@@ -48,9 +48,15 @@ dirList.forEach(dir => {
 });
 
 module.exports = {
-  title: "Hello VuePress",
+  title: "Hello VuePress!",
   description: "Blog v0.0.1",
   themeConfig: {
     nav: navArr
+  },
+  postcss: {
+    plugins: [
+      require("autoprefixer"),
+      require("tailwindcss")("./tailwind.config.js")
+    ]
   }
 };

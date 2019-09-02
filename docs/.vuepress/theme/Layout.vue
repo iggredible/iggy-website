@@ -1,32 +1,41 @@
 <template>
-    <div>
-        <header class="hero is-primary">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">{{ $site.title }}</h1>
-                </div>
-            </div>
-        </header>
-        <section class="section">
-            <div class="container">
-                <Index v-if="isIndex" />
-                <Single v-if="!isIndex" />
-            </div>
-        </section>
-    </div>
+      <div class="container max-w-5xl mx-auto flex md:flex-row flex-col">
+        <!-- separate this into its own component later -->
+        <!-- intro -->
+        <div class="md:w-1/3">
+          <About />
+        </div>
+
+        <!-- separate this into its own component later -->
+        <!-- blogs -->
+        <div>
+          <Blogs v-if="isBlogs" />
+          <Blog v-if="!isBlogs" />
+        </div>
+      
+      </div>
+        <!-- <section class="section"> -->
+        <!--     <div class="container"> -->
+        <!--     </div> -->
+        <!-- </section> -->
 </template>
 <script>
-import Index from './Index';
-import Single from './Single';
+import Blogs from './Blogs';
+import Blog from './Blog';
+import About from './About';
 export default {
     components: {
-        Index,
-        Single
+        Blogs,
+        Blog,
+        About
     },
     computed: {
-        isIndex() {
-            return this.$page.path.endsWith("/");
+        isBlogs() {
+            return this.$page.path.endsWith("/") 
         }
     }
 };
 </script>
+<style lang="stylus">
+@import './styles/theme.styl';
+</style>
