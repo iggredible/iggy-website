@@ -1,5 +1,5 @@
 ---
-title: What the heck are CJS, AMD, UMD, and ESM?
+title: What the heck are CJS, AMD, UMD, and ESM in Javascript?
 excerpt: Differences between CJS, AMD, UMD, ESM
 tags: Javascript, modules, CJS, ESM
 date: 22 July, 2019

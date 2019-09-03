@@ -1,14 +1,14 @@
 <template>
       <div class="container max-w-5xl mx-auto">
-        <!-- separate this into its own component later -->
+				<Nav />
         <!-- intro -->
         <div class="w-full flex md:flex-row flex-col" v-if="isBlogs">
           <div class="md:w-1/3">
             <About />
-          </div>
+						</div>
 
-          <!-- separate this into its own component later -->
-          <!-- blogs -->
+						<!-- separate this into its own component later -->
+						<!-- blogs -->
           <div>
             <Blogs v-if="isBlogs" />
             <!-- AboutPage if isAbout change what is displayed here -->
@@ -29,11 +29,13 @@
 import Blogs from './Blogs';
 import Blog from './Blog';
 import About from './About';
+import Nav from './Nav';
 export default {
     components: {
         Blogs,
         Blog,
-        About
+        About,
+				Nav
     },
     computed: {
         isBlogs() {

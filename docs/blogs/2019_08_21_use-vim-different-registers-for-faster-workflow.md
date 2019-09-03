@@ -1,5 +1,5 @@
 ---
-title: use different registers for faster workflow
+title: Use Vim's different registers for faster workflow
 excerpt: vim registers
 tags: vim, registers, copy, paste
 date: 21 August, 2019

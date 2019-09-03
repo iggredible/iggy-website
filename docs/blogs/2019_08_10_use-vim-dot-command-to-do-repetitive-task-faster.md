@@ -1,5 +1,5 @@
 ---
-title: use dot command to do repetitive tasks faster
+title: use Vim's dot command to do repetitive tasks faster
 excerpt: vim dot command tips
 tags: vim, editor, productivity, discuss
 date: 10 August, 2019
@@ -92,7 +92,7 @@ Let's compare all of the repeatable changes from the past few examples:
 2. `c i w <Backspace> <Esc>`
 3. `I ( <esc>`
 
-Do you see a pattern? They all _start_ with commands that put you into insert mode (c, A, and I are all command that results in entering Insert mode) and end with <esc> . 
+Do you see a pattern? They all _start_ with commands that put you into insert mode (c, A, and I are all command that results in entering Insert mode) and end with `<esc>` . 
 
 Another one I didn't mention was delete commands like `dd`. I can delete lines repeatedly by `dd . . . .`. Although dd does not enter insert mode, vim considers it as a change because it deletes an entire line. Remember, anything that adds, removes, or updates text is considered as change by vim. 
 

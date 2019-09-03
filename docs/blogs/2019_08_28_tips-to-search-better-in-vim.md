@@ -1,5 +1,5 @@
 ---
-title: quick tips to do search better
+title: Quick tips to do search better in Vim
 excerpt: vim searching tips
 tags: vim, search, regex, patterns
 date: 28 August, 2019

@@ -34,7 +34,6 @@ dirList.forEach(dir => {
 
   files.forEach(file => {
     console.log("file: ", file);
-    console.log(!isReadme(file));
     if (!isReadme(file)) {
       const extensionlessFileName = stripExtension(file);
       dirArr = [
@@ -51,12 +50,21 @@ module.exports = {
   title: "Hello VuePress!",
   description: "Blog v0.0.1",
   themeConfig: {
-    nav: navArr
+    nav: navArr,
+    sidebar: "auto"
   },
   postcss: {
     plugins: [
       require("autoprefixer"),
       require("tailwindcss")("./tailwind.config.js")
     ]
-  }
+  },
+  plugins: [
+    [
+      "@vuepress/search",
+      {
+        searchMaxSuggestions: 10
+      }
+    ]
+  ]
 };
