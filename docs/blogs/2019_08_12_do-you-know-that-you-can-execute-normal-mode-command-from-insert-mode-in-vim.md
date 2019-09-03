@@ -2,6 +2,7 @@
 title: Do you know that you can execute normal mode command from insert mode in Vim?
 excerpt: How to run normal mode commands while in insert mode
 tags: vim, productivity, insert-mode, normal-mode
+date: 12 August, 2019
 ---
 
 Vim has been my go-to editor for the last 1.5 years, yet I am still learning something new. Recently I learned about "Insert Normal" mode and I'd like to share how you can use this mode to code faster in vim!
