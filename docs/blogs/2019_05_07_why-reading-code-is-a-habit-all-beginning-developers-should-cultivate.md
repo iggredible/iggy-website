@@ -1,7 +1,6 @@
 ---
 title: Why reading code is a habit all beginning developers should cultivate
-published: true
-description: Reading code helps beginning developers to grow and to become better
+excerpt: Reading code helps beginning developers to grow and to become better
 tags: web-development, growth, junior-developer, habit
 date: 7 May, 2019
 ---

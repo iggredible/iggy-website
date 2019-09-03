@@ -1,6 +1,6 @@
 ---
 title: use different registers for faster workflow
-description: vim registers
+excerpt: vim registers
 tags: vim, registers, copy, paste
 date: 21 August, 2019
 ---

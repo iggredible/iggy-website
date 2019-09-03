@@ -6,9 +6,9 @@
         <div>
             <div class="m-8" v-for="post in posts">
               <div class="text-sm uppercase">{{ post.frontmatter.date}}</div>
-              <a class="text-2xl font-bold" :href="post.path">{{ post.title }}</a>
+              <a class="text-2xl font-bold">{{ post.title }}</a>
 							<div class="text-start">{{ post.frontmatter.excerpt }}</div>
-              <a class="text-sm text-blue-400" :href="post.path">Read More →</a>
+              <a class="hover:underline text-sm text-blue-400" :href="post.path">Read More →</a>
             </div>
         </div>
     </div>
