@@ -3,9 +3,9 @@
 				<Nav />
         <!-- intro -->
         <div class="w-full flex md:flex-row flex-col" v-if="isBlogs">
-          <div class="md:w-1/3">
-            <About />
-						</div>
+          <!-- <div class="md:w&#45;1/3"> -->
+          <!--   <About /> -->
+          <!-- </div> -->
 
 						<!-- separate this into its own component later -->
 						<!-- blogs -->
