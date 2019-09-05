@@ -1,12 +1,11 @@
 <template>
-    <div class="container p-8 flex flex-col items-center justify-center">
-      <div class="container my-4">
-        <img src="./assets/images/iggy_square.jpg" class="h-20 w-20 rounded-full">
-        <div class="font-bold m-2 text-center">Iggy Irianto</div>
-      </div>
-      <a class="m-2 hover:underline cursor-pointer">Posts</a>
-      <a class="m-2 hover:underline cursor-pointer">About</a>
+  <div class="container flex flex-col items-start justify-center">
+    <div class="my-4">
+      <img src="./assets/images/iggy_square.jpg" class="ml-0 h-20 w-20 mb-4 rounded-full">
+      <div class="font-bold text-white mb-4">Igor Irianto</div>
+      <div class="font-light text-gray-500 text-sm">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.</div>
     </div>
+  </div>
 </template>
 <script>
 export default {};
