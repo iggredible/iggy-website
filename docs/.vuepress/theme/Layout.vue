@@ -1,6 +1,7 @@
 <template>
-      <div class="container max-w-5xl mx-auto">
+  <div>
 				<Nav />
+      <div class="container max-w-5xl mx-auto">
         <!-- intro -->
         <div class="w-full flex md:flex-row flex-col" v-if="isBlogs">
           <!-- <div class="md:w&#45;1/3"> -->
@@ -24,6 +25,7 @@
         <!--     <div class="container"> -->
         <!--     </div> -->
         <!-- </section> -->
+  </div>
 </template>
 <script>
 import Blogs from './Blogs';

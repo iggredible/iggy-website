@@ -4,12 +4,12 @@
      <label id="hamburger" for="menu-toggle" class="fixed cursor-pointer block"> <!-- maybe do top:0 left: 0 for hamburger? -->
      <!--   <svg class="text&#45;gray&#45;900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v&#45;2z"></path></svg> -->
      <!-- </label> -->
-     <div id="burgerToggle" class="">
-       <span></span>
-       <span></span>
-       <span></span>
-     </div>
-</label>
+       <div id="burgerToggle" class="">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+    </label>
      <!-- menu -->
     <div class="bg-gray-800 fixed top-0 left-0 bottom-0 w-64" id="sideMenu">
       <ul class="m-8">
@@ -45,6 +45,8 @@ export default {
   }
   #menu-toggle:checked ~ #hamburger span {
 		background: #FFF;
+    transform: translate(12rem, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 /* add x transforming effect hamburger */
     /* fill: #FFF; */
     /* z-index: 5; */
