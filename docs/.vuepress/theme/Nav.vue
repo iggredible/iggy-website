@@ -11,7 +11,7 @@
     </label>
      <!-- menu -->
     <div class="bg-gray-800 fixed top-0 left-0 bottom-0 w-64" id="sideMenu">
-      <ul class="m-16">
+      <ul class="my-16 mx-4">
         <li class="my-4"><About /></li>
         <li class="my-4 text-white font-light"><a class="" href="#">Blogs</a></li>
         <li class="my-4 text-white font-light"><a class="" href="#">About</a></li>
