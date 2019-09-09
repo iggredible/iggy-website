@@ -1,7 +1,7 @@
 <template>
   <header class="px-6 bg-white flex flex-wrap items-center py-8">
      <input class="hidden" type="checkbox" id="menu-toggle" />
-     <label id="hamburger" for="menu-toggle" class="fixed cursor-pointer block"> 
+     <label id="hamburger" for="menu-toggle" class="fixed cursor-pointer block z-20"> 
      <!-- </label> -->
        <div id="burgerToggle" class="cursor-pointer">
          <span></span>
@@ -10,12 +10,11 @@
        </div>
     </label>
      <!-- menu -->
-    <div class="bg-gray-800 fixed top-0 left-0 bottom-0 w-64" id="sideMenu">
+    <div class="bg-gray-800 z-10 fixed top-0 left-0 bottom-0 w-64" id="sideMenu">
       <ul class="my-16 mx-4">
-        <li class="my-4"><About /></li>
+        <li class="my-4 cursor-default hover:no-underline"><About /></li>
         <li class="my-4 text-white font-light"><a class="" href="#">Blogs</a></li>
         <li class="my-4 text-white font-light"><a class="" href="#">About</a></li>
-        <li class="my-4 text-white font-light"><a class="" href="#">Contact Me</a></li>
       </ul>
      </div>
 
@@ -44,9 +43,6 @@ export default {
   }
   #menu-toggle:checked ~ #hamburger span {
 		background: #FFF;
-  }
-  #hamburger {
-    z-index: 5;
   }
 
   /* animates x */

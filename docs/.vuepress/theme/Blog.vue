@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div>
-            <a href="/">← Home</a>
+    <div class="relative">
+        <div class="fixed top-4 left-0 pl-5">
+            <a href="/">Home</a>
         </div>
         <div class="content mx-16 lg:mx-24">
             <h1 class="text-center">{{ $page.frontmatter.title }}</h1>
