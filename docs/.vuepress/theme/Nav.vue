@@ -18,6 +18,9 @@
       </ul>
      </div>
 
+     <div class="absolute top-0 right-0 m-4">
+       <SearchBox />
+     </div>
   </header>
 </template>
 
